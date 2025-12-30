@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | ITC – Innovation Tech Centre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">ITC – Innovation Tech Centre</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="courses.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="btn btn-outline-light me-2 ms-lg-3" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="btn btn-primary" href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="bg-light py-4 border-bottom">
+    <div class="container">
+        <h1 class="fw-bold mb-0">Our Course Catalog</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 small">
+                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Courses</li>
+            </ol>
+        </nav>
+    </div>
+</header>
+
+<section class="container py-5">
+    <div class="row g-4">
+        
+        <div class="col-lg-3">
+            <div class="course-sidebar sticky-top" style="top: 20px;">
+                <h4 class="fw-bold mb-4 text-primary">Filter Courses</h4>
+
+                <div class="course-filter-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search courses...">
+                        <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                <div class="course-filter-group">
+                    <h6>Course Category</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cat-webdev">
+                        <label class="form-check-label small" for="cat-webdev">Web Development (12)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cat-data" checked>
+                        <label class="form-check-label small" for="cat-data">Data Science & AI (8)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cat-cyber">
+                        <label class="form-check-label small" for="cat-cyber">Cyber Security (5)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cat-cloud">
+                        <label class="form-check-label small" for="cat-cloud">Cloud Computing (3)</label>
+                    </div>
+                </div>
+
+                <div class="course-filter-group">
+                    <h6>Difficulty Level</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="difficulty" id="diff-beg" checked>
+                        <label class="form-check-label small" for="diff-beg">Beginner</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="difficulty" id="diff-int">
+                        <label class="form-check-label small" for="diff-int">Intermediate</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="difficulty" id="diff-adv">
+                        <label class="form-check-label small" for="diff-adv">Advanced</label>
+                    </div>
+                </div>
+
+                <div class="course-filter-group">
+                    <h6>Pricing</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="price-free">
+                        <label class="form-check-label small" for="price-free">Free Courses</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="price-paid" checked>
+                        <label class="form-check-label small" for="price-paid">Paid Courses</label>
+                    </div>
+                </div>
+
+                <button class="btn btn-sm btn-outline-dark w-100 mt-2">Apply Filters</button>
+            </div>
+        </div>
+        
+        <div class="col-lg-9">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <p class="mb-0 text-muted">Showing <strong>1 - 10</strong> of 28 results</p>
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Sort By: Popularity
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item small" href="#">Popularity</a></li>
+                        <li><a class="dropdown-item small" href="#">Newest First</a></li>
+                        <li><a class="dropdown-item small" href="#">Price: Low to High</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                
+                <div class="col">
+                    <div class="card h-100 course-card">
+                        <img src="http://googleusercontent.com/image_collection/image_retrieval/8538334616902334452_0" class="card-img-top course-card-img" alt="Data Science Image">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-truncate">Data Science Fundamentals using Python</h5>
+                            <p class="card-text small text-muted mb-3">Master the basics of data manipulation and analysis with hands-on projects.</p>
+                            <div class="d-flex justify-content-between align-items-center small mb-3">
+                                <div><i class="fas fa-signal text-secondary me-1"></i> Beginner</div>
+                                <div><i class="fas fa-clock text-secondary me-1"></i> 25 Hours</div>
+                                <div><i class="fas fa-users text-secondary me-1"></i> 4,500 Enrolled</div>
+                            </div>
+                            <div class="progress mb-2" style="height: 5px;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="text-primary small mb-2">Your Progress: 75% Complete</p>
+                        </div>
+                        <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                            <span class="text-success fw-bold fs-5">$129</span>
+                            <a href="#" class="btn btn-sm btn-enroll text-white fw-bold">Continue Learning</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 course-card">
+                        <img src="http://googleusercontent.com/image_collection/image_retrieval/6665422172118919872_0" class="card-img-top course-card-img" alt="React Development Image">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-truncate">Modern Full-Stack React & Node Bootcamp</h5>
+                            <p class="card-text small text-muted mb-3">Build and deploy full-stack applications from scratch using the MERN stack.</p>
+                            <div class="d-flex justify-content-between align-items-center small mb-3">
+                                <div><i class="fas fa-signal text-secondary me-1"></i> Advanced</div>
+                                <div><i class="fas fa-clock text-secondary me-1"></i> 60 Hours</div>
+                                <div><i class="fas fa-users text-secondary me-1"></i> 1,200 Enrolled</div>
+                            </div>
+                            <p class="text-primary small mb-2 invisible">Placeholder Progress</p>
+                        </div>
+                        <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                            <span class="text-success fw-bold fs-5">$299</span>
+                            <a href="#" class="btn btn-sm btn-primary fw-bold">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card h-100 course-card">
+                        <img src="http://googleusercontent.com/image_collection/image_retrieval/7263094360161822884_0" class="card-img-top course-card-img" alt="PHP Laravel Image">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-truncate">Building Robust APIs with PHP & Laravel</h5>
+                            <p class="card-text small text-muted mb-3">Learn to create RESTful APIs, authentication, and database migrations efficiently.</p>
+                            <div class="d-flex justify-content-between align-items-center small mb-3">
+                                <div><i class="fas fa-signal text-secondary me-1"></i> Intermediate</div>
+                                <div><i class="fas fa-clock text-secondary me-1"></i> 30 Hours</div>
+                                <div><i class="fas fa-users text-secondary me-1"></i> 3,800 Enrolled</div>
+                            </div>
+                            <p class="text-primary small mb-2 invisible">Placeholder Progress</p>
+                        </div>
+                        <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                            <span class="text-success fw-bold fs-5">$179</span>
+                            <a href="#" class="btn btn-sm btn-primary fw-bold">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 course-card">
+                        <img src="assets/img/course-cybersec.jpg" class="card-img-top course-card-img" alt="Cyber Security Image">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-truncate">Introduction to Cyber Security and Ethical Hacking</h5>
+                            <p class="card-text small text-muted mb-3">A foundational course on network defense, threat analysis, and security principles.</p>
+                            <div class="d-flex justify-content-between align-items-center small mb-3">
+                                <div><i class="fas fa-signal text-secondary me-1"></i> Beginner</div>
+                                <div><i class="fas fa-clock text-secondary me-1"></i> 15 Hours</div>
+                                <div><i class="fas fa-users text-secondary me-1"></i> 6,100 Enrolled</div>
+                            </div>
+                            <p class="text-primary small mb-2 invisible">Placeholder Progress</p>
+                        </div>
+                        <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                            <span class="text-success fw-bold fs-5">FREE</span>
+                            <a href="#" class="btn btn-sm btn-outline-success fw-bold">Start Now!</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <nav class="mt-5 d-flex justify-content-center">
+                <ul class="pagination">
+                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<footer class="footer py-4">
+    <div class="container text-center text-light">
+        <p class="mb-0">&copy; 2024 ITC – Innovation Tech Centre. All rights reserved.</p>
+        <p class="mb-0"><a href="#" class="text-light text-decoration-none small">Privacy Policy</a> | <a href="#" class="text-light text-decoration-none small">Terms of Service</a></p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

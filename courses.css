@@ -108,7 +108,7 @@ body.dark-mode .nav .nav-bar a:hover {
 }
 body.dark-mode .nav .nav-bar button {
     background-color: #F87B1B; /* Secondary color for buttons */
-    color: #white; /* Dark text on buttons */
+    color: #ffffff; /* Dark text on buttons */
 }
 
 body.dark-mode .hero {
