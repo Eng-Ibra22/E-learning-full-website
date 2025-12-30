@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* primary background-color:#002455; */
+     /* secondry  color:#F87B1B; */
+
+
+
+}
+body {
+    font-family: poppins, sans-serif;
+    line-height: 1.6;
+    color:#F87B1B;
+}
+
+.bod{
+    background-color: #baf8f8;
+}
+
+body .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.1px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+body .nav .nav-bar {
+    display: flex;
+    gap: 40px;
+}
+
+body .nav .nav-bar a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #002455;
+    text-decoration: none;
+    margin-top: 7px;
+}
+body .nav .nav-bar a:hover {
+    color: #F87B1B;
+}
+body .nav button {
+    padding: 8px 16px;
+    background-color: #002455;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+body .nav #theme-toggle {
+    margin-right: 30px;
+}
+body .nav button:hover {
+    background-color: #F87B1B;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #001a33; /* Dark background for the entire page */
+    color: #ffffff; /* Light text for the entire page */
+}
+body.dark-mode .nav .logo img {
+    filter: brightness(0) invert(1); /* Invert logo colors for dark mode */
+    
+}
+body.dark-mode .container{
+    background-color: #001a33; /* Dark background for the entire page */
+    color: #ffffff; /* Light text for the entire page */
+}
+
+body.dark-mode .nav {
+    background-color: #002455; /* Darker nav background */
+    color: #ffffff;
+}
+body.dark-mode .nav .logo img {
+    filter: brightness(0) invert(1); /* Invert logo colors for dark mode */
+    
+}
+
+body.dark-mode .nav .nav-bar a {
+    color: #ffffff; /* Light nav links */
+}
+
+body.dark-mode .nav .nav-bar a:hover {
+    color: #F87B1B; /* Secondary color on hover */
+}
+body.dark-mode .nav .nav-bar button {
+    background-color: #F87B1B; /* Secondary color for buttons */
+    color: #white; /* Dark text on buttons */
+}
+
+body.dark-mode .hero {
+    background-color: #002455; /* Dark background for the hero section */
+    color: #ffffff; /* Light text for the hero section */
+}
+
+body.dark-mode .hero .text h1,
+body.dark-mode .hero .text p {
+    color: #ffffff; /* Light text for headings and paragraphs */
+}
+
+body.dark-mode .hero .text .btn {
+    background-color: #F87B1B; /* Secondary color for buttons */
+    color: #002455; /* Dark text on buttons */
+}
+
+body.dark-mode .hero .text .btn:hover {
+    background-color: #ffffff; /* Light hover background */
+    color: #002455; /* Dark hover text */
+}
+
+body.dark-mode .hero .sawir img {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); /* Adjust shadow for dark mode */
+}
+
+body.dark-mode footer {
+    background-color: #002455; /* Dark background for footer */
+    color: #ffffff; /* Light text for footer */
+}
+
+
+.section1{
+    text-align: center;
+    margin-top: 60px;
+    background-image: url(web1.jpg);
+    padding: 80px;
+    
+
+  
+}
+
+.section1 h1{
+font-size: 40px;
+color: #ffffff;
+}
+
+.S_text p{
+ color: #fff;
+ font-size: 18px;
+
+
+ 
+}
+
+
+.box {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+    
+
+
+}
+
+
+
+
+.box1 {
+   width: 280px;
+   height: 200px;
+   background-color: #0a1129;
+   border-radius: 8px;
+  border: solid 1px orange; 
+
+  
+
+}
+
+.box1 i{
+    position: relative;
+    top: 45px;
+    color: #f87b1b;
+}
+
+
+.box1 h3    {
+    color: white;
+    text-align: center;
+     margin-top: 60px;
+}
+
+.box1 {
+    color: #999999;
+    text-align: center;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+
+form{
+    background-color: #323533;
+    width: 400px;
+    
+    
+}
+
+form input{
+    display: block;
+    margin: 8px;
+    margin-left: 20px;
+    width: 300px;
+    padding: 15px;
+   outline: none;
+   border: none;
+    background-color: #0a0a0a;
+    color: white;
+    border-radius: 5px;
+
+}
+
+form h3{
+    color: #ffffff;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+label{
+    color: #c5c2c2;
+    margin-left: 20px;
+}
+
+textarea{
+     background-color: #0a0a0a;
+     margin-left: 20px;
+}
+
+
+
+.BTN
+{
+    width: 90%;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+   background-color: #f87b1b;
+    border-radius: 10px;
+    color: #ffffff;
+    
+   
+    
+
+
+
+
+
+
+}
+
+
+.contact2{
+
+  position: absolute;
+  bottom: -500px;
+  left: 350px;
+}
+
+
+ .contact2 p {
+  width: 200px;
+  overflow: hidden;
+  color: #dbdcdb;
+  font-size: 15px;
+  
+}
+
+
+.contact2 h2{
+    color: #ffffff;
+}
+
+.contact2 i{
+    display: block;
+    margin: 10px;
+    color: #f36303;
+}
+
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+ 
+  margin-top: 90px;
+}
+
+.buttons button{
+   
+    outline: none;
+    border: none;
+    margin: 4px;
+    width: 600px;
+    padding: 15px;
+    background-color: #151414;
+    color: white;
+    cursor: pointer;
+ 
+}
+
+
+
+    
+
+
+
+.buttons h3{
+    color: #002455;
+    font-weight: 700;
+}
+.buttons .btn1{
+    background-color: #002455;
+    border-radius: 10px;
+}
+
+
+
+.buttons .b_answer{
+    padding: 20;
+    background-color: #f36303;
+    border-radius: 6px;
+    color: #002455;
+    padding-top: 5px;
+    padding-left: 10px;
+    bottom: -100px;
+    display: none;
+    width: 550px;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    background-color: #002455;
+    color: #ffffff;
+    padding: 40px 0;
+    margin-top: 100px;
+}
+
+
+.footer-links a {
+    color: #F87B1B; 
+    text-decoration: none;
+    line-height: 2.2; 
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff; 
+    text-decoration: underline;
+}
+
+.social-icons .social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons .social-icon:hover {
+    background-color: #F87B1B; 
+    color: #002455; 
+}
+
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.6) !important; 
+}
+
+.footer .contact-icons i {
+    color: #F87B1B; 
+    font-size: 18px; 
+    margin-right: 10px;
+}
+
+.footer .container2 .row a.btn {
+    background-color: #F87B1B; 
+    color: #002455; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.footer .container2 .row a.btn:hover {
+    background-color: #ffffff; 
+    color: #002455; 
+    transform: scale(1.05);
+}

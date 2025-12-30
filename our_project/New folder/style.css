@@ -1,0 +1,48 @@
+/* ... existing styles ... */
+
+/* New: Courses Page Layout Specific Styles */
+.course-sidebar {
+    padding: 20px;
+    background-color: var(--itc-light); /* Light gray background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.course-filter-group {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.course-filter-group:last-child {
+    border-bottom: none;
+}
+
+.course-filter-group h6 {
+    color: var(--itc-dark);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Enhancing Checkbox/Radio styling for modern look */
+.form-check-input:checked {
+    background-color: var(--itc-blue);
+    border-color: var(--itc-blue);
+}
+
+/* Course Card Image (to ensure aspect ratio) */
+.course-card-img {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Enhancing button hover effect for the Courses page */
+.btn-enroll {
+    background-color: var(--itc-accent);
+    border-color: var(--itc-accent);
+}
+
+.btn-enroll:hover {
+    background-color: #117a8b;
+    border-color: #117a8b;
+}

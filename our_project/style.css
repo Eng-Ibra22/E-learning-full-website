@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* primary background-color:#002455; */
+     /* secondry  color:#F87B1B; */
+
+
+
+}
+
+body {
+    font-family: poppins, sans-serif;
+    line-height: 1.6;
+    color:#F87B1B;
+}
+
+.bod{
+    background-color: #baf8f8;
+}
+body .container {
+    max-width: 100%;
+
+    
+}
+/* header */
+
+body .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.1px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+.bod .logo{
+    overflow: hidden;
+    gap: 10px;
+}
+.bod h2{
+    color: #002455;
+    font-size: 18px;
+    font-weight:800;
+    padding-top: 15px;
+    margin-left: 160px;
+    position: absolute;
+
+}
+.bod h2 .tech-center {
+    color: #F87B1B; /* Specific color for the words 'Tech Center' */
+}
+body .nav .nav-bar {
+    display: flex;
+    gap: 40px;
+}
+
+body .nav .nav-bar a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #002455;
+    text-decoration: none;
+    margin-top: 7px;
+}
+body .nav .nav-bar a:hover {
+    color: #F87B1B;
+}
+body .nav button {
+    padding: 8px 16px;
+    background-color: #002455;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+body .nav #theme-toggle {
+    margin-right: 30px;
+}
+body .nav button:hover {
+    background-color: #F87B1B;
+}
+
+/* hero */
+
+body .hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 10px;
+    padding: 40px;
+    background-color: #fdffffea;
+    border-radius: 10px;
+
+}
+body .hero .text {
+    max-width: 50%;
+    animation: slideIn 1.5s ease-out; 
+
+}
+@keyframes slideIn {
+    from {
+        opacity: 0; 
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+body .hero .text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color:#002455;
+}
+body .hero .text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+body .hero .sawir {
+    margin-left: 10px;
+}
+body .hero .sawir img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 1 5px 8px rgba(0.1, 0.1, 0.1, 0.4);
+    animation: pulse 3s infinite ease-in-out; /* Add continuous animation */
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); 
+        box-shadow: 1 5px 8px rgba(0.1, 0.1, 0.1, 0.1); 
+    }
+    50% {
+        transform: scale(1.05); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    }
+}
+
+body .hero .sawir img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+body .hero .text #bot1 {
+    padding: 10px 35px;
+    background-color: #002455;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 10px;
+}
+body .hero .text #bot2 {
+    padding: 10px 35px;
+    color: #002455;
+    border: #002455;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+body .hero .text .btn:hover {
+    background-color: #F87B1B;
+    color: #002455;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #001a33; /* Dark background for the entire page */
+    color: #ffffff; /* Light text for the entire page */
+}
+body.dark-mode .container{
+    background-color: #001a33; /* Dark background for the entire page */
+    color: #ffffff; /* Light text for the entire page */
+}
+
+body.dark-mode .nav {
+    background-color: #002455; /* Darker nav background */
+    color: #ffffff;
+}
+body.dark-mode .nav .logo img {
+    filter: brightness(0) invert(1); /* Invert logo colors for dark mode */
+    
+}
+
+body.dark-mode .nav .nav-bar a {
+    color: #ffffff; /* Light nav links */
+}
+
+body.dark-mode .nav .nav-bar a:hover {
+    color: #F87B1B; /* Secondary color on hover */
+}
+body.dark-mode .nav .nav-bar button {
+    background-color: #F87B1B; /* Secondary color for buttons */
+    color: #white; /* Dark text on buttons */
+}
+
+body.dark-mode .hero {
+    background-color: #002455; /* Dark background for the hero section */
+    color: #ffffff; /* Light text for the hero section */
+}
+
+body.dark-mode .hero .text h1,
+body.dark-mode .hero .text p {
+    color: #ffffff; /* Light text for headings and paragraphs */
+}
+
+body.dark-mode .hero .text .btn {
+    background-color: #F87B1B; /* Secondary color for buttons */
+    color: #002455; /* Dark text on buttons */
+}
+
+body.dark-mode .hero .text .btn:hover {
+    background-color: #ffffff; /* Light hover background */
+    color: #002455; /* Dark hover text */
+}
+
+body.dark-mode .hero .sawir img {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); /* Adjust shadow for dark mode */
+}
+
+body.dark-mode footer {
+    background-color: #002455; /* Dark background for footer */
+    color: #ffffff; /* Light text for footer */
+}
+
+body .container .herotwo{
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+body .container .herotwo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+body .container .herotwo h1{
+    color: #002455;
+    margin-bottom: 20px;
+    font-family: poppins, sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+}
+body .container .herotwo .box{
+    display: flex;
+}
+body .container .herotwo .inbox{
+    background-color:#002455;
+    padding: 10px 10px;
+    margin: 0px 10px;
+    color: #F87B1B;
+    border-radius: 15px;
+    padding-left: 20px;
+}
+body .container .herotwo .box i {
+    color: #Fff;
+    background-color:#094293;
+    font-size: larger;
+    padding: 10px;
+    border-radius: 8px;
+    padding-right:34px ;
+
+}
+body .container .herotwo .box p{
+    color: #fff;
+    
+}
+body .container .herotwo .inbox:hover{
+    background-color: #F87B1B;    
+    color: #002455;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 255, 255, 0.2);
+
+}
+
+
+
+/* --- FOOTER STYLES --- */
+
+.footer {
+    width: 100%;
+    background-color: #002455;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+
+.footer-links a {
+    color: #F87B1B; 
+    text-decoration: none;
+    line-height: 2.2; 
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff; 
+    text-decoration: underline;
+}
+
+.social-icons .social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons .social-icon:hover {
+    background-color: #F87B1B; 
+    color: #002455; 
+}
+
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.6) !important; 
+}
+
+.footer .contact-icons i {
+    color: #F87B1B; 
+    font-size: 18px; 
+    margin-right: 10px;
+}
+
+.footer .container2 .row a.btn {
+    background-color: #F87B1B; 
+    color: #002455; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.footer .container2 .row a.btn:hover {
+    background-color: #ffffff; 
+    color: #002455; 
+    transform: scale(1.05);
+}
+
+
